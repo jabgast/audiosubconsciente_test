@@ -1,0 +1,137 @@
+  /**Styling scrollable elements*/
+  
+  .js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
+  
+  .scrolled.fade-in {
+    animation: fade-in 1s ease-in-out both;
+  }
+  
+  .scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+  }
+  
+  .scrolled.slide-left {
+    animation: slide-in-left 1s ease-in-out both;
+  }
+  
+  .scrolled.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+  }
+  .slide_in_left{
+    animation: slide_in_left 1s ease-in-out both;
+  }
+  .slide_in_top{
+    animation: slide_in_left 1s ease-in-out both;
+  }
+  
+  @keyframes slide_in_left{
+   0%{
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+   }
+   100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  }
+  @keyframes slide_in_top{
+    0%{
+     -webkit-transform: translateY(-100px);
+     transform: translateY(-100px);
+     opacity: 0;
+    }
+    100% {
+     -webkit-transform: translateY(0);
+     transform: translateY(0);
+     opacity: 1;
+   }
+   }
+ 
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(200px);
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .ligthnin{
+    animation-name: ligthnin;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes ligthnin{
+    0%{filter: drop-shadow(0 0 8px  #78dce9);}
+    25%{filter: drop-shadow(0 0 8px  #556cec);}
+    50%{filter: drop-shadow(0 0 8px  #9844dd);}
+    75%{filter: drop-shadow(0 0 8px  #556cec);}
+    100%{filter: drop-shadow(0 0 8px  #78dce9);}
+  }
+
+.eyeSel2:hover{
+  display: none;
+}
+
+.showCircleFade{
+  animation-name: showCircleFade;
+  animation-duration: 1s;
+}
+
+@keyframes showCircleFade{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
